@@ -1,0 +1,12 @@
+{
+  "name": "TAMU Login Sucks",
+  "description": "Prevent unneccesary re-authentications for Texas A&M University's central login",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {"scripts":["background.js"]},
+  "permissions": [
+    "webRequest",
+    "*://*.tamu.edu/*",
+    "webRequestBlocking"
+  ]
+}
